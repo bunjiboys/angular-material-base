@@ -1,16 +1,28 @@
-# Editor configuration, see https://editorconfig.org
+# EditorConfig is awesome: https://EditorConfig.org
 root = true
 
+# Unix-style newlines with a newline ending every file
 [*]
-charset = utf-8
-indent_style = space
-indent_size = 2
+end_of_line = lf
 insert_final_newline = true
+indent_style = tab
+indent_size = 4
+tab_width = 4
+charset = utf-8
 trim_trailing_whitespace = true
+max_line_length = 140
 
-[*.ts]
-quote_type = single
+[*.go]
+ij_go_import_sorting = gofmt
+ij_go_group_stdlib_imports = true
+ij_go_move_all_imports_in_one_declaration = true
+ij_go_remove_redundant_import_aliases = true
+ij_go_GROUP_CURRENT_PROJECT_IMPORTS = true
+ij_wrap_on_typing = true
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
 
 [*.md]
-max_line_length = off
-trim_trailing_whitespace = false
+indent_style = space
